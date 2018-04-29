@@ -3,7 +3,6 @@ dist: trusty
 
 script:
 - sudo apt-get update
-- sudo apt-get upgrade -y
 - mkdir ~/bin
 - PATH=~/bin:$PATH
 - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo

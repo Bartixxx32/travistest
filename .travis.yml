@@ -6,7 +6,7 @@ script:
 - PATH=~/bin:$PATH
 - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 - chmod a+x ~/bin/repo
-- repo init -u https://android.googlesource.com/platform/manifest
+- Y | repo init -u https://android.googlesource.com/platform/manifest 
 
 jdk:
   - openjdk8

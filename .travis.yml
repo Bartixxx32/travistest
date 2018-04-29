@@ -7,8 +7,10 @@ script:
 - PATH=~/bin:$PATH
 - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 - chmod a+x ~/bin/repo
-- Y | repo init -u https://android.googlesource.com/platform/manifest 
-- repo sync
+- Y | repo init -u https://android.googlesource.com/platform/manifest >> repo.txt
+- repo sync >> sync.txt
+- pastebinit repo.txt
+- pastebinit sync.txt
 
 jdk:
   - openjdk8
@@ -37,4 +39,6 @@ addons:
       - libxml2-utils
       - xsltproc 
       - unzip
+      - pastebinit
+      
 

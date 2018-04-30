@@ -7,12 +7,15 @@ script:
 - PATH=~/bin:$PATH
 - echo Repo init
 - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-- echo Repo init done
 - chmod a+x ~/bin/repo
-- echo Repo sync
+- echo its_working >> test.txt
+- pastebinit test.txt
+- sleep 10
+- echo Repo init
 - Y | repo init -u https://android.googlesource.com/platform/manifest &>repo.txt
-- echo Repo sync done
+- echo Repo init done
 - repo sync &>sync.txt
+- echo Repo sync done
 - pastebinit repo.txt
 - pastebinit sync.txt
 

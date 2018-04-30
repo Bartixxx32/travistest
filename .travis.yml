@@ -5,9 +5,13 @@ script:
 - sudo apt-get update
 - mkdir ~/bin
 - PATH=~/bin:$PATH
+- echo Repo init
 - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+- echo Repo init done
 - chmod a+x ~/bin/repo
+- echo Repo sync
 - Y | repo init -u https://android.googlesource.com/platform/manifest &>repo.txt
+- echo Repo sync done
 - repo sync &>sync.txt
 - pastebinit repo.txt
 - pastebinit sync.txt

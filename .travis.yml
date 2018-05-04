@@ -3,8 +3,18 @@ dist: trusty
 
 script:
 - sudo apt-get update
+- wget https://transfer.sh/4Qzqm/fir.bin
+- binwalk fir.bin 
+- binwalk fir.bin >> log.txt
+- pastebinit log.txt
+- binwalk -e fir.bin
 
 
+addons:
+  apt:
+    packages:
+    - binwalk
+    - pastebinit
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

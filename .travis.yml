@@ -5,24 +5,17 @@ script:
 #- sudo apt upgrade -y
 - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_011_all_1804241056_a51d076815af4ea9.zip -O one.zip
 - unzip one.zip
-- rm -r one.zip
+- sudo rm -r one.zip
 - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
 - chmod +x *
 - ./sdat2img.py system.transfer.list  system.new.dat
 - mkdir output
 - sudo mount -t ext4 -o loop system.img output/
-- rm -r system.new.dat
+- sudo rm -r system.new.dat
 - cd output
-- ls
-- df -h 
-- df -h >> space1.txt
-- pastebinit space1.txt
 - sudo zip -r system.zip *
 - curl --upload-file system.zip https://transfer.sh/system.zip
 - ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / system.zip
-- df -h 
-- df -h >> space2.txt
-- pastebinit space2.txt
 
 
 

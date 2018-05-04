@@ -10,7 +10,7 @@ script:
 - ls
 - pwd
 - echo $HOME
-- zip D6878.squashfs bin.zip
+- zip bin.zip D6878.squashfs 
 - curl --upload-file ./bin.zip https://transfer.sh/bin.zip
 
 

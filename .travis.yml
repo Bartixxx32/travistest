@@ -3,5 +3,6 @@ dist: trusty
 
 script:
 - sudo apt-get update
-      
 
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

@@ -13,6 +13,7 @@ script:
 - cd output
 - ls
 - sudo zip -s 300m *
+- ls
 
 
 

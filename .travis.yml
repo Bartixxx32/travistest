@@ -10,6 +10,7 @@ script:
 - ./sdat2img.py system.transfer.list  system.new.dat
 - mkdir output
 - sudo mount -t ext4 -o loop system.img output/
+- rm -r system.new.dat
 - cd output
 - ls
 - df -h 

@@ -1,8 +1,0 @@
-sudo: required
-dist: trusty
-
-script:
-- wget https://transfer.sh/y8NN3/installed
-- sudo apt-get install --ignore-missing $(cat installed) -y
-notifications:
-  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

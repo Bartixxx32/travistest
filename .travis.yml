@@ -8,6 +8,7 @@ script:
 - binwalk fir.bin >> log.txt
 - pastebinit log.txt
 - binwalk -e fir.bin
+- ls
 
 
 addons:
@@ -15,6 +16,7 @@ addons:
     packages:
     - binwalk
     - pastebinit
+    - tree
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

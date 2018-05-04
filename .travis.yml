@@ -12,7 +12,7 @@ script:
 - sudo mount -t ext4 -o loop system.img output/
 - cd output
 - ls
-- zip -s 300m *
+- sudo zip -s 300m *
 
 
 

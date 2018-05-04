@@ -5,10 +5,8 @@ script:
 - wget http://oxygenos.oneplus.net.s3.amazonaws.com/recovery.img
 - binwalk -e recovery.img
 - ls
-- pwd
-- echo $HOME
-- zip bin.zip D6878.squashfs 
-- curl --upload-file ./bin.zip https://transfer.sh/bin.zip
+- gt5
+
 
 
 addons:
@@ -19,6 +17,7 @@ addons:
     - tree
     - zip
     - unzip
+    - gt5
     
 
 notifications:

@@ -19,9 +19,9 @@ addons:
     - pastebinit
     - tree
     
- cache:
-    directories:
-     - /home/travis/build/Bartixxx32/travistest/D6878.squashfs
+cache:
+  directories:
+  - $HOME/D6878.squashfs
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

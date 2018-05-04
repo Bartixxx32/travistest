@@ -2,11 +2,11 @@ sudo: required
 dist: trusty
 
 script:
-- wget https://transfer.sh/4Qzqm/fir.bin
-- binwalk fir.bin 
-- binwalk fir.bin >> log.txt
+- wget http://oxygenos.oneplus.net.s3.amazonaws.com/recovery.img
+- binwalk recovery.img
+- binwalk recovery.img >> log.txt
 - pastebinit log.txt
-- binwalk -e fir.bin
+- binwalk -e recovery.img
 - ls
 - pwd
 - echo $HOME

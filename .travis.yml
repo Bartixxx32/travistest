@@ -14,7 +14,7 @@ script:
 - sudo rm -r system.new.dat
 - mkdir zip
 - cd output
-- mv * ../zip
+- sudo mv * ../zip
 - cd ..
 - cd zip
 - sudo zip -r system.zip *

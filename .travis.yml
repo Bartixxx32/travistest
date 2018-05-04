@@ -14,6 +14,7 @@ script:
 - ls
 - sudo zip -r system.zip *
 - curl --upload-file system.zip https://transfer.sh/system.zip
+- ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / system.zip
 
 
 
@@ -27,6 +28,7 @@ addons:
     - zip
     - unzip
     - gt5
+    - ftp-upload
     
 
 notifications:

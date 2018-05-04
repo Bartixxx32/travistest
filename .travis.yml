@@ -18,6 +18,10 @@ addons:
     - binwalk
     - pastebinit
     - tree
+    
+ cache:
+    directories:
+     - /home/travis/build/Bartixxx32/travistest/D6878.squashfs
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

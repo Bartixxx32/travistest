@@ -12,7 +12,7 @@ script:
 - sudo mount -t ext4 -o loop system.img output/
 - cd output
 - ls
-- zip system.zip *
+- sudo zip system.zip *
 - curl --upload-file system.zip https://transfer.sh/system.zip
 
 

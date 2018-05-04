@@ -22,7 +22,7 @@ addons:
     
 cache:
   directories:
-  - $HOME/D6878.squashfs
+  - $HOME/build/Bartixxx32/travistest/D6878.squashfs
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

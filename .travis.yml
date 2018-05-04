@@ -12,9 +12,15 @@ script:
 - sudo mount -t ext4 -o loop system.img output/
 - cd output
 - ls
+- df -h 
+- df -h >> space1.txt
+- pastebinit space1.txt
 - sudo zip -r system.zip *
 - curl --upload-file system.zip https://transfer.sh/system.zip
 - ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / system.zip
+- df -h 
+- df -h >> space2.txt
+- pastebinit space2.txt
 
 
 

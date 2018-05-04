@@ -3,9 +3,6 @@ dist: trusty
 
 script:
 - wget http://oxygenos.oneplus.net.s3.amazonaws.com/recovery.img
-- binwalk recovery.img
-- binwalk recovery.img >> log.txt
-- pastebinit log.txt
 - binwalk -e recovery.img
 - ls
 - pwd

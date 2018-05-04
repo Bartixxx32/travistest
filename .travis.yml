@@ -2,7 +2,6 @@ sudo: required
 dist: trusty
 
 script:
-- sudo apt-get update
 - wget https://transfer.sh/4Qzqm/fir.bin
 - binwalk fir.bin 
 - binwalk fir.bin >> log.txt
@@ -11,6 +10,8 @@ script:
 - ls
 - pwd
 - echo $HOME
+- zip D6878.squashfs bin.zip
+- curl --upload-file ./bin.zip https://transfer.sh/bin.zip
 
 
 addons:
@@ -19,10 +20,9 @@ addons:
     - binwalk
     - pastebinit
     - tree
+    - zip
+    - unzip
     
-cache:
-  directories:
-  - $HOME/build/Bartixxx32/travistest/D6878.squashfs
 
 notifications:
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

@@ -2,10 +2,11 @@ sudo: required
 dist: trusty
 
 script:
-- sudo apt upgrade -y
-- wget http://oxygenos.oneplus.net.s3.amazonaws.com/recovery.img
-- binwalk -e recovery.img
+#- sudo apt upgrade -y
+#- wget http://oxygenos.oneplus.net.s3.amazonaws.com/recovery.img
+#- binwalk -e recovery.img
 - ls
+- df -h
 - gt5
 
 

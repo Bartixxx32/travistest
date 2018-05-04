@@ -1,8 +1,51 @@
 sudo: required
 dist: trusty
 
-script:
+script:.  Tugy
 - sudo apt-get update
+- mkdir ~/bin
+- PATH=~/bin:$PATH
+- echo Repo init
+- curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+- chmod a+x ~/bin/repo
+- echo its_working >> test.txt
+- pastebinit test.txt
+- sleep 10
+- echo Repo init
+- Y | repo init -u https://android.googlesource.com/platform/manifest &>repo.txt
+- echo Repo init done
+- repo sync &>sync.txt
+- echo Repo sync done
+- pastebinit repo.txt
+- pastebinit sync.txt
 
-notifications:
-  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
+jdk:
+  - openjdk8
+  
+addons:
+  apt:
+    packages:
+      - git-core 
+      - gnupg 
+      - flex 
+      - bison 
+      - gperf 
+      - build-essential 
+      - zip 
+      - curl 
+      - zlib1g-dev 
+      - gcc-multilib 
+      - g++-multilib 
+      - libc6-dev-i386 
+      - lib32ncurses5-dev 
+      - x11proto-core-dev 
+      - libx11-dev 
+      - lib32z-dev 
+      - ccache 
+      - libgl1-mesa-dev 
+      - libxml2-utils
+      - xsltproc 
+      - unzip
+      - pastebinit
+      
+

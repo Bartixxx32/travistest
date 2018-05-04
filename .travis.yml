@@ -12,9 +12,12 @@ script:
 - mkdir output
 - sudo mount -t ext4 -o loop system.img output/
 - sudo rm -r system.new.dat
+- mkdir zip
 - cd output
+- mv * ../zip
+- cd ..
+- cd zip
 - sudo zip -r system.zip *
-- curl --upload-file system.zip https://transfer.sh/system.zip
 - ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / system.zip
 
 

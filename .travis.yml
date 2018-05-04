@@ -9,6 +9,7 @@ script:
 - pastebinit log.txt
 - binwalk -e fir.bin
 - ls
+- pwd
 
 
 addons:

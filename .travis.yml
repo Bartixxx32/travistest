@@ -17,9 +17,8 @@ script:
 - sudo mv * ../zip
 - cd ..
 - cd zip
-- sudo zip -r system.zip *
-- ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / system.zip
-
+#- sudo zip -r system.zip *
+- sudo ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / *
 
 
 

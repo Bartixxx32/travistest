@@ -26,12 +26,8 @@ script:
 addons:
   apt:
     packages:
-    - binwalk
-    - pastebinit
-    - tree
     - zip
     - unzip
-    - gt5
     - ftp-upload
     
 

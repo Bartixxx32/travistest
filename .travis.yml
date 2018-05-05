@@ -19,7 +19,7 @@ script:
 - cd zip
 #- sudo zip -r system.zip *
 - sudo ftp-upload -h plikicli.5v.pl  -u ftp-user36409  --password 23042001 -d / *
-
+- sudo ncftpput -u ftp-user36409 -p 23042001 plikicli.5v.pl / *
 
 
 addons:
@@ -27,7 +27,8 @@ addons:
     packages:
     - zip
     - unzip
-    - ftp-upload
+    - ftp-upload 
+    - ncftp
     
 
 notifications:

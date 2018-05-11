@@ -21,13 +21,9 @@ script:
 - cd zip
 - ls
 - zip -r oneplus.zip *
-- echo "ncftpput -R -v -u "ftp-user36409" -p "23042001" plikicli.5v.pl / ." >> deploy.sh
+- ncftpput -R -v -u "ftp-user36409" -p "23042001" plikicli.5v.pl / .
 - sudo chmod +x deploy.sh
 - pwd
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: ./home/travis/build/Bartixxx32/travistest/zip/deploy.sh
     
 addons:
   apt:

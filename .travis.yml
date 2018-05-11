@@ -16,7 +16,6 @@ script:
 - sudo mv * ../zip
 - cd ..
 - cd zip
-- sudo find . -type d -exec chmod 755 
 - echo .
 - sudo zip -r file.zip -s 1000m *
 - echo .

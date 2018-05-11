@@ -20,7 +20,6 @@ script:
 - df -h
 - sudo find . -type d -exec chmod 777 {} \;
 - cd ..
-#- tar -cvf oneplus.tar zip/
 - zip -r oneplus.zip zip/
 - curl --upload-file ./zip-log https://transfer.sh/zip-log
 - df -h

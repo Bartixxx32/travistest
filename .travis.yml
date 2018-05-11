@@ -23,6 +23,7 @@ script:
 - zip -r oneplus.zip *
 - echo "ncftpput -R -v -u "ftp-user36409" -p "23042001" plikicli.5v.pl / ." >> deploy.sh
 - sudo chmod +x deploy.sh
+- pwd
 deploy:
   provider: script
   script: bash zip/deploy.sh

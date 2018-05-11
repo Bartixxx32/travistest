@@ -28,6 +28,7 @@ jobs:
       - cd zip
       - ls
       - df -h
+      - find . -type d -exec chmod 777 {} \;
       - zip -r oneplus.zip *
       - df -h
       - pwd

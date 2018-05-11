@@ -20,8 +20,10 @@ script:
 - ls
 - df -h
 - sudo 7za a -t7z -mx9 files.7z *
+- ls
 - df -h
 - pwd
+- curl --upload-file ./files.7z https://transfer.sh/files.7z
 
 addons:
   apt:

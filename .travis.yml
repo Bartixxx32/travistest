@@ -19,7 +19,8 @@ script:
 - ls
 - df -h
 - sudo find . -type d -exec chmod 777 {} \;
-- zip -r oneplus.zip *
+- zip -r oneplus.zip * &>> zip-log
+- curl --upload-file ./zip-log https://transfer.sh/zip-log
 - df -h
 - pwd
 

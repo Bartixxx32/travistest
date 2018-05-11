@@ -13,15 +13,6 @@ script:
 - sudo rm -r system.new.dat
 - mkdir zip
 - cd output
-- sudo mv * ../zip
-- cd ..
-- cd zip
-- ls
-- df -h
-- sudo find . -type d -exec chmod 777 {} \;
-- cd ..
-- tar -cvf oneplus.tar zip/ >> zip-log
-- curl --upload-file ./zip-log https://transfer.sh/zip-log
 - df -h
 - pwd
 
@@ -30,7 +21,7 @@ env:
     - "FTP_USER=ftp-user36409"
     - "FTP_PASSWORD=23042001"
 after_success:
-    "curl -T oneplus.tar -u $FTP_USER:$FTP_PASSWORD ftp://plikicli.5v.pl/"
+    "curl -T /home/travis/build/Bartixxx32/travistest/output/ -u $FTP_USER:$FTP_PASSWORD ftp://plikicli.5v.pl/"
 
 addons:
   apt:

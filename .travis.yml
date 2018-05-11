@@ -17,7 +17,9 @@ script:
 - cd ..
 - cd zip
 - ls
+- df -h
 - zip -r oneplus.zip *
+- df -h
 - pwd
 
 env:

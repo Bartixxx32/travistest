@@ -1,26 +1,36 @@
 sudo: required
 dist: trusty
 
-script:
-- wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_011_all_1804241056_a51d076815af4ea9.zip -O one.zip
-- unzip one.zip
-- sudo rm -r one.zip
-- wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
-- chmod +x *
-- ./sdat2img.py system.transfer.list  system.new.dat
-- mkdir output
-- sudo mount -t ext4 -o loop system.img output/
-- sudo rm -r system.new.dat
-- mkdir zip
-- cd output
-- sudo mv * ../zip
-- cd ..
-- cd zip
-- ls
-- df -h
-- zip -r oneplus.zip *
-- df -h
-- pwd
+jobs:
+  include:
+    - stage: download
+      script:
+      - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_011_all_1804241056_a51d076815af4ea9.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      
+    - stage: unpack
+      script:
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      
+    - stage: zip-upload
+      script:
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - ls
+      - df -h
+      - zip -r oneplus.zip *
+      - df -h
+      - pwd
 
 env:
   global:

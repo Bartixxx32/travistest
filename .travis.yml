@@ -35,12 +35,13 @@ script:
 addons:
   apt:
     packages:
-    update: true
     - zip
     - unzip
     - ncftp
     - p7zip-full
-
+  addons:
+    apt:
+      update: true
     
 
 notifications:

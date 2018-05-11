@@ -16,9 +16,10 @@ script:
 - sudo mv * ../zip
 - cd ..
 - cd zip
+- sudo find . -type d -exec chmod 755 
 - ls
 - df -h
-- 7za a -t7z -mx9 files.7z *
+- sudo 7za a -t7z -mx9 files.7z *
 - df -h
 - pwd
 

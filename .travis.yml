@@ -34,6 +34,7 @@ script:
 - echo .
 - echo .
 - echo done
+- python -c "import fcntl; fcntl.fcntl(1, fcntl.F_SETFL, 0)"
 addons:
   apt:
     packages:

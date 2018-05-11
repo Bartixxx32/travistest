@@ -1,6 +1,10 @@
 sudo: required
 dist: trusty
 
+install:
+  - npm install
+  - bower install
+
 script:
 - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_011_all_1804241056_a51d076815af4ea9.zip -O one.zip
 - unzip one.zip
@@ -18,10 +22,15 @@ script:
 - cd zip
 - ls
 - zip -r oneplus.zip *
-- ncftpput -R -v -u "ftp-user36409" -p "23042001" plikicli.5v.pl / .
-- sudo chmod +x deploy.sh
 - pwd
-    
+
+env:
+  global:
+    - "FTP_USER=ftp-user36409"
+    - "FTP_PASSWORD=23042001"
+after_success:
+    "curl -T oneplus.zip -u $FTP_USER:$FTP_PASSWORD ftp://plikicli.5v.pl/"
+
 addons:
   apt:
     packages:

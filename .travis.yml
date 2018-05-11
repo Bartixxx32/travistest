@@ -18,16 +18,9 @@ script:
 - cd zip
 - ls
 - df -h
-- tar cvf - . | gzip -9 - > file.tar.gz
+- 7za a -t7z -mx9 files.7z *
 - df -h
 - pwd
-
-env:
-  global:
-    - "FTP_USER=ftp-user36409"
-    - "FTP_PASSWORD=23042001"
-after_success:
-    "curl -T /home/travis/build/Bartixxx32/travistest/output/ -u $FTP_USER:$FTP_PASSWORD ftp://plikicli.5v.pl/"
 
 addons:
   apt:
@@ -35,6 +28,7 @@ addons:
     - zip
     - unzip
     - ncftp
+    - p7zip-full
     
 
 notifications:

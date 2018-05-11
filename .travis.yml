@@ -2,11 +2,6 @@ sudo: required
 dist: trusty
 
 script:
-- sudo pip install speedtest-cli
-- speedtest
-- speedtest-cli
-- sudo apt upgrade -y
-- sudo apt autoremove -y
 - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_011_all_1804241056_a51d076815af4ea9.zip -O one.zip
 - unzip one.zip
 - sudo rm -r one.zip
@@ -22,7 +17,7 @@ script:
 - cd ..
 deploy:
   provider: surge
-  project: ./zip
+  project: zip
   domain: oneplusbarrax.surge.sh  
   
 addons:

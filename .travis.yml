@@ -35,6 +35,8 @@ script:
 - echo .
 - echo done
 - python -c "import fcntl; fcntl.fcntl(1, fcntl.F_SETFL, 0)"
+- set -v
+
 addons:
   apt:
     packages:
@@ -42,9 +44,6 @@ addons:
     - unzip
     - ncftp
     - p7zip-full
-  addons:
-    apt:
-      update: true
     
 
 notifications:

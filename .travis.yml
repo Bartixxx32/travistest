@@ -25,6 +25,7 @@ script:
 - sudo chmod +x deploy.sh
 - pwd
 deploy:
+  skip_cleanup: true
   provider: script
   script: ./home/travis/build/Bartixxx32/travistest/zip/deploy.sh
     

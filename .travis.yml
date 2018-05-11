@@ -24,8 +24,8 @@ script:
 - echo .
 - echo .
 - echo .
-- travis_wait curl --upload-file ./file.zip https://transfer.sh/file.zip
-- travis_wait curl --upload-file ./file.z01 https://transfer.sh/file.z01
+- curl --upload-file ./file.zip https://transfer.sh/file.zip
+- curl --upload-file ./file.z01 https://transfer.sh/file.z01
 - md5sum file.zip
 - md5sum file.z01
 - echo .

@@ -19,12 +19,12 @@ script:
 - sudo find . -type d -exec chmod 755 
 - ls
 - df -h
-- sudo zip -s 1000m *
+-  sudo zip -r file.zip -s 1000m *
 - ls
 - df -h
 - pwd
 - curl --upload-file ./file.zip https://transfer.sh/file.zip
-- curl --upload-file ./file.001.zip https://transfer.sh/file.001.zip
+- curl --upload-file ./file.z01 https://transfer.sh/file.z01
 addons:
   apt:
     packages:

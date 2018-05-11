@@ -16,9 +16,10 @@ script:
 - touch 1
 - touch 2
 - touch 3
-- #sudo mv * ../zip
+- sudo mv * ../zip
 - cd ..
 - cd zip
+- ls
 - zip -r oneplus.zip *
 - echo "ncftpput -R -v -u "ftp-user36409" -p "23042001" plikicli.5v.pl / ." >> deploy.sh
 - sudo chmod +x deploy.sh

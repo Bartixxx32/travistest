@@ -99,8 +99,6 @@ jobs:
       - echo .
       - curl --upload-file ./ob3.zip https://transfer.sh/ob3.zip
       - curl --upload-file ./ob3.z01 https://transfer.sh/ob3.z01
-      - md5sum file.zip
-      - md5sum file.z01
       - echo .
       - echo .
       - echo .

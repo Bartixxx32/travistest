@@ -199,8 +199,8 @@ jobs:
       - echo .
       - echo .
       - echo .
+      - ls
       - curl --upload-file ./ob6.zip https://transfer.sh/ob6.zip
-      - curl --upload-file ./ob6.z01 https://transfer.sh/ob6.z01
       - echo .
       - echo .
       - echo .

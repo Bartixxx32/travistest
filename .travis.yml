@@ -5,10 +5,10 @@ jobs:
   include:
     - stage: ob1
       script: 
-- echo done
+      - echo done
     - stage: ob2
       script:
- - echo test
+      - echo test
 
       
 addons:

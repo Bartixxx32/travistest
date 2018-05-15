@@ -4,12 +4,13 @@ language: bash
 jobs:
   include:
     - stage: ob1
-script:
-- sudo touch test.txt
-- ls
-- stage: ob2
-script:
-- ls
+      script: 
+      - sudo touch test.txt
+      - echo stage 1
+    - stage: ob2
+      script: 
+      - ls
+      - echo stage 2
 addons:
   apt:
     packages:

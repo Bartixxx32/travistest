@@ -16,7 +16,7 @@ script:
 - sudo mv * ../zip
 - cd ..
 - cd zip
-- rm -r app/Chrome/Chrome.apk
+- sudo rm -r app/Chrome/Chrome.apk
 - touch app/Chrome/removed 100mb+.txt
 - sudo zip -r file.zip -s 1000m *
 - echo .

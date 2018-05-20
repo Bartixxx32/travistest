@@ -276,9 +276,11 @@ jobs:
       - echo .
       - echo .
       - echo done
-  addons:
+addons:
     apt:
       update: true
+addons:
+    apt:
       packages:
     - zip
     - unzip

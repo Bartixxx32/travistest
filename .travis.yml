@@ -276,9 +276,10 @@ jobs:
       - echo .
       - echo .
       - echo done
-addons:
-  apt:
-    packages:
+  addons:
+    apt:
+      update: true
+      packages:
     - zip
     - unzip
     - ncftp

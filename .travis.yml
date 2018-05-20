@@ -278,9 +278,6 @@ jobs:
       - echo done
 addons:
     apt:
-      update: true
-addons:
-    apt:
       packages:
     - zip
     - unzip

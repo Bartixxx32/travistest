@@ -277,12 +277,16 @@ jobs:
       - echo .
       - echo done
 addons:
-    apt:
-      packages:
+  apt:
+    packages:
     - zip
     - unzip
     - ncftp
     - p7zip-full
+    
+  addons:
+    apt:
+      update: true 
     
 
 notifications:

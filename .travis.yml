@@ -302,8 +302,8 @@ jobs:
       - echo .
       - echo .
       - echo .
-      - curl --upload-file ./ob8.zip https://transfer.sh/ob9.zip
-      - curl --upload-file ./ob8.z01 https://transfer.sh/ob9.z01
+      - curl --upload-file ./ob9.zip https://transfer.sh/ob9.zip
+      - curl --upload-file ./ob9.z01 https://transfer.sh/ob9.z01
       - echo .
       - echo .
       - echo .

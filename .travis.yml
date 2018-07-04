@@ -344,7 +344,7 @@ jobs:
       - echo .
       - echo .
       - echo done
-   - stage: ob10
+   - stage: ob11
       script: 
       - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.15_GLO_015_1807031556/OnePlus5TOxygen_43_OTA_015_all_1807031556_1637f29ff.zip -O one.zip
       - unzip one.zip

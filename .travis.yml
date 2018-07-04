@@ -344,6 +344,40 @@ jobs:
       - echo .
       - echo .
       - echo done
+   - stage: ob10
+      script: 
+      - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.15_GLO_015_1807031556/OnePlus5TOxygen_43_OTA_015_all_1807031556_1637f29ff.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - sudo rm -r app/Chrome/Chrome.apk
+      - cd app/Chrome
+      - sudo touch "removed +100mb.txt"
+      - cd ../..
+      - sudo zip -r ob11.zip -s 1000m *
+      - echo .
+      - echo .
+      - echo .
+      - echo .
+      - echo .
+      - curl --upload-file ./ob11.zip https://transfer.sh/ob11.zip
+      - curl --upload-file ./ob11.z01 https://transfer.sh/ob11.z01
+      - echo .
+      - echo .
+      - echo .
+      - echo .
+      - echo .
+      - echo done
 addons:
   apt:
     packages:

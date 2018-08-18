@@ -24,18 +24,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob1.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob1.zip https://transfer.sh/ob1.zip
       - curl --upload-file ./ob1.z01 https://transfer.sh/ob1.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob2
       script:
@@ -58,18 +48,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob2.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob2.zip https://transfer.sh/ob2.zip
       - curl --upload-file ./ob2.z01 https://transfer.sh/ob2.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob3
       script: 
@@ -92,18 +72,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob3.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob3.zip https://transfer.sh/ob3.zip
       - curl --upload-file ./ob3.z01 https://transfer.sh/ob3.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob4
       script: 
@@ -126,18 +96,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob4.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob4.zip https://transfer.sh/ob4.zip
       - curl --upload-file ./ob4.z01 https://transfer.sh/ob4.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob5
       script: 
@@ -160,18 +120,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob5.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob5.zip https://transfer.sh/ob5.zip
       - curl --upload-file ./ob5.z01 https://transfer.sh/ob5.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob6
       script: 
@@ -194,19 +144,9 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob6.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - ls
       - curl --upload-file ./ob6.zip https://transfer.sh/ob6.zip
       - curl --upload-file ./ob6.z01 https://transfer.sh/ob6.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob7
       script: 
@@ -229,18 +169,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob7.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob7.zip https://transfer.sh/ob7.zip
       - curl --upload-file ./ob7.z01 https://transfer.sh/ob7.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob8
       script: 
@@ -263,18 +193,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob8.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob8.zip https://transfer.sh/ob8.zip
       - curl --upload-file ./ob8.z01 https://transfer.sh/ob8.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob9
       script: 
@@ -297,18 +217,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob9.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob9.zip https://transfer.sh/ob9.zip
       - curl --upload-file ./ob9.z01 https://transfer.sh/ob9.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob10
       script: 
@@ -331,18 +241,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob10.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob10.zip https://transfer.sh/ob10.zip
       - curl --upload-file ./ob10.z01 https://transfer.sh/ob10.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob11
       script: 
@@ -365,18 +265,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob11.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob11.zip https://transfer.sh/ob11.zip
       - curl --upload-file ./ob11.z01 https://transfer.sh/ob11.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob12
       script: 
@@ -399,18 +289,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob12.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob12.zip https://transfer.sh/ob12.zip
       - curl --upload-file ./ob12.z01 https://transfer.sh/ob12.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
     - stage: ob13
       script: 
@@ -433,18 +313,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob13.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob13.zip https://transfer.sh/ob13.zip
       - curl --upload-file ./ob13.z01 https://transfer.sh/ob13.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done 
     - stage: ob14
       script: 
@@ -467,18 +337,8 @@ jobs:
       - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob14.zip -s 1000m *
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - curl --upload-file ./ob14.zip https://transfer.sh/ob14.zip
       - curl --upload-file ./ob14.z01 https://transfer.sh/ob14.z01
-      - echo .
-      - echo .
-      - echo .
-      - echo .
-      - echo .
       - echo done
       
 

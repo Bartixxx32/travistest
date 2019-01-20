@@ -405,8 +405,7 @@ jobs:
       - echo done
     - stage: ob20
       script: 
-      - wget 
-https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.26_GLO_026_1812052331/OnePlus5TOxygen_43_OTA_026_all_1812052331_d9e594c.zip -O one.zip
+      - wget https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.26_GLO_026_1812052331/OnePlus5TOxygen_43_OTA_026_all_1812052331_d9e594c.zip -O one.zip
       - unzip one.zip
       - sudo rm -r one.zip
       - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py

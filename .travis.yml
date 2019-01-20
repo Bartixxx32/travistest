@@ -19,9 +19,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob1.zip -s 1000m *
       - curl --upload-file ./ob1.zip https://transfer.sh/ob1.zip
@@ -43,9 +40,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob2.zip -s 1000m *
       - curl --upload-file ./ob2.zip https://transfer.sh/ob2.zip
@@ -67,9 +61,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob3.zip -s 1000m *
       - curl --upload-file ./ob3.zip https://transfer.sh/ob3.zip
@@ -90,10 +81,7 @@ jobs:
       - cd output
       - sudo mv * ../zip
       - cd ..
-      - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
+      - cd zip 
       - cd ../..
       - sudo zip -r ob4.zip -s 1000m *
       - curl --upload-file ./ob4.zip https://transfer.sh/ob4.zip
@@ -114,10 +102,7 @@ jobs:
       - cd output
       - sudo mv * ../zip
       - cd ..
-      - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
+      - cd zip 
       - cd ../..
       - sudo zip -r ob5.zip -s 1000m *
       - curl --upload-file ./ob5.zip https://transfer.sh/ob5.zip
@@ -138,10 +123,7 @@ jobs:
       - cd output
       - sudo mv * ../zip
       - cd ..
-      - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
+      - cd zip  
       - cd ../..
       - sudo zip -r ob6.zip -s 1000m *
       - ls
@@ -163,10 +145,7 @@ jobs:
       - cd output
       - sudo mv * ../zip
       - cd ..
-      - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
+      - cd zip  
       - cd ../..
       - sudo zip -r ob7.zip -s 1000m *
       - curl --upload-file ./ob7.zip https://transfer.sh/ob7.zip
@@ -187,10 +166,7 @@ jobs:
       - cd output
       - sudo mv * ../zip
       - cd ..
-      - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
+      - cd zip  
       - cd ../..
       - sudo zip -r ob8.zip -s 1000m *
       - curl --upload-file ./ob8.zip https://transfer.sh/ob8.zip
@@ -212,9 +188,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob9.zip -s 1000m *
       - curl --upload-file ./ob9.zip https://transfer.sh/ob9.zip
@@ -236,9 +209,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob10.zip -s 1000m *
       - curl --upload-file ./ob10.zip https://transfer.sh/ob10.zip
@@ -260,9 +230,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob11.zip -s 1000m *
       - curl --upload-file ./ob11.zip https://transfer.sh/ob11.zip
@@ -284,9 +251,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob12.zip -s 1000m *
       - curl --upload-file ./ob12.zip https://transfer.sh/ob12.zip
@@ -308,9 +272,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob13.zip -s 1000m *
       - curl --upload-file ./ob13.zip https://transfer.sh/ob13.zip
@@ -332,9 +293,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob14.zip -s 1000m *
       - curl --upload-file ./ob14.zip https://transfer.sh/ob14.zip
@@ -356,9 +314,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob15.zip -s 1000m *
       - curl --upload-file ./ob15.zip https://transfer.sh/ob15.zip
@@ -380,9 +335,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob16.zip -s 1000m *
       - curl --upload-file ./ob16.zip https://transfer.sh/ob16.zip
@@ -404,9 +356,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob17.zip -s 1000m *
       - curl --upload-file ./ob17.zip https://transfer.sh/ob17.zip
@@ -428,9 +377,6 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
       - cd ../..
       - sudo zip -r ob18.zip -s 1000m *
       - curl --upload-file ./ob18.zip https://transfer.sh/ob18.zip
@@ -451,15 +397,98 @@ jobs:
       - cd output
       - sudo mv * ../zip
       - cd ..
-      - cd zip
-      - sudo rm -r app/Chrome/Chrome.apk
-      - cd app/Chrome
-      - sudo touch "removed +100mb.txt"
+      - cd zip 
       - cd ../..
       - sudo zip -r ob19.zip -s 1000m *
-      - curl --upload-file ./ob19.zip https://transfer.sh/ob18.zip
-      - curl --upload-file ./ob19.z01 https://transfer.sh/ob18.z01
+      - curl --upload-file ./ob19.zip https://transfer.sh/ob19.zip
+      - curl --upload-file ./ob19.z01 https://transfer.sh/ob19.z01
       - echo done
+    - stage: ob20
+      script: 
+      - wget 
+https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.26_GLO_026_1812052331/OnePlus5TOxygen_43_OTA_026_all_1812052331_d9e594c.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip  
+      - cd ../..
+      - sudo zip -r ob20.zip -s 1000m *
+      - curl --upload-file ./ob20.zip https://transfer.sh/ob20.zip
+      - curl --upload-file ./ob20.z01 https://transfer.sh/ob20.z01
+      - echo done
+    - stage: ob21
+      script: 
+      - wget https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.27_GLO_027_1812181341/OnePlus5TOxygen_43_OTA_027_all_1812181341_899e19d0.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip    
+      - cd ../..
+      - sudo zip -r ob21.zip -s 1000m *
+      - curl --upload-file ./ob21.zip https://transfer.sh/ob21.zip
+      - curl --upload-file ./ob21.z01 https://transfer.sh/ob21.z01
+      - echo done
+    - stage: ob22
+      script: 
+      - wget https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.32_GLO_032_1812240018/OnePlus5TOxygen_43_OTA_032_all_1812240018_5dbad171.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip 
+      - cd ../..
+      - sudo zip -r ob22.zip -s 1000m *
+      - curl --upload-file ./ob22.zip https://transfer.sh/ob22.zip
+      - curl --upload-file ./ob22.z01 https://transfer.sh/ob22.z01
+      - echo done
+    - stage: ob23
+      script: 
+      - wget http://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.34_GLO_034_1901140045/OnePlus5TOxygen_43_OTA_034_all_1901140045_02d9112732.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - cd ../..
+      - sudo zip -r ob23.zip -s 1000m *
+      - curl --upload-file ./ob23.zip https://transfer.sh/ob23.zip
+      - curl --upload-file ./ob23.z01 https://transfer.sh/ob23.z01
+      - echo done
+   
     
  
 

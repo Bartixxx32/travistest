@@ -1,6 +1,9 @@
 sudo: required
 dist: trusty
 language: bash
+ cache:
+    directories:
+     - /home/travis/
 jobs:
   include:
     - stage: ob1

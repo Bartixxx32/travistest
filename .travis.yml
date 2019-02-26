@@ -487,6 +487,27 @@ jobs:
       - curl --upload-file ./ob23.zip https://transfer.sh/ob23.zip
       - curl --upload-file ./ob23.z01 https://transfer.sh/ob23.z01
       - echo done
+    - stage: ob24
+      script: 
+      - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_037_all_1902141756_5dbd535d24c74105.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - cd ../..
+      - sudo zip -r ob24.zip -s 1000m *
+      - curl --upload-file ./ob24.zip https://transfer.sh/ob24.zip
+      - curl --upload-file ./ob24.z01 https://transfer.sh/ob24.z01
+      - echo done
    
     
  

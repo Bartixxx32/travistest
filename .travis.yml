@@ -508,6 +508,27 @@ jobs:
       - curl --upload-file ./ob24.zip https://transfer.sh/ob24.zip
       - curl --upload-file ./ob24.z01 https://transfer.sh/ob24.z01
       - echo done
+    - stage: ob25
+      script: 
+      - wget http://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.38_GLO_038_1902251921/OnePlus5TOxygen_43_OTA_038_all_1902251921_f2da623eaac4.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - cd ../..
+      - sudo zip -r ob25.zip -s 1000m *
+      - curl --upload-file ./ob25.zip https://transfer.sh/ob25.zip
+      - curl --upload-file ./ob25.z01 https://transfer.sh/ob25.z01
+      - echo done
    
     
  

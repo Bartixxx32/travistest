@@ -1,5 +1,6 @@
 sudo: required
-dist: trusty
+dist: xenial
+
 language: bash
 jobs:
   include:
@@ -585,6 +586,10 @@ addons:
   addons:
     apt:
       update: true 
+  
+addons:
+  snaps:
+    - transfer
     
 
 notifications:

@@ -22,8 +22,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob1.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob1.zip https://transfer.sh/ob1.zip
-      - travis_wait curl --upload-file ./ob1.z01 https://transfer.sh/ob1.z01
+      - transfer ./ob1.zip
+      - transfer ./ob1.z01
       - echo done
     - stage: ob2
       script:
@@ -43,8 +43,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob2.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob2.zip https://transfer.sh/ob2.zip
-      - travis_wait curl --upload-file ./ob2.z01 https://transfer.sh/ob2.z01
+      - transfer ./ob2.zip 
+      - transfer ./ob2.z01 
       - echo done
     - stage: ob3
       script: 
@@ -64,8 +64,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob3.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob3.zip https://transfer.sh/ob3.zip
-      - travis_wait curl --upload-file ./ob3.z01 https://transfer.sh/ob3.z01
+      - transfer ./ob3.zip
+      - transfer ./ob3.z01
       - echo done
     - stage: ob4
       script: 
@@ -85,8 +85,8 @@ jobs:
       - cd zip 
       - cd ../..
       - sudo zip -r ob4.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob4.zip https://transfer.sh/ob4.zip
-      - travis_wait curl --upload-file ./ob4.z01 https://transfer.sh/ob4.z01
+      - transfer ./ob4.zip
+      - transfer ./ob4.z01
       - echo done
     - stage: ob5
       script: 
@@ -106,8 +106,8 @@ jobs:
       - cd zip 
       - cd ../..
       - sudo zip -r ob5.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob5.zip https://transfer.sh/ob5.zip
-      - travis_wait curl --upload-file ./ob5.z01 https://transfer.sh/ob5.z01
+      - transfer ./ob5.zip
+      - transfer ./ob5.z01
       - echo done
     - stage: ob6
       script: 
@@ -128,8 +128,8 @@ jobs:
       - cd ../..
       - sudo zip -r ob6.zip -s 1000m *
       - ls
-      - travis_wait curl --upload-file ./ob6.zip https://transfer.sh/ob6.zip
-      - travis_wait curl --upload-file ./ob6.z01 https://transfer.sh/ob6.z01
+      - transfer ./ob6.zip
+      - transfer ./ob6.z01
       - echo done
     - stage: ob7
       script: 
@@ -149,8 +149,8 @@ jobs:
       - cd zip  
       - cd ../..
       - sudo zip -r ob7.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob7.zip https://transfer.sh/ob7.zip
-      - travis_wait curl --upload-file ./ob7.z01 https://transfer.sh/ob7.z01
+      - transfer ./ob7.zip 
+      - transfer ./ob7.z01 
       - echo done
     - stage: ob8
       script: 
@@ -170,8 +170,8 @@ jobs:
       - cd zip  
       - cd ../..
       - sudo zip -r ob8.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob8.zip https://transfer.sh/ob8.zip
-      - travis_wait curl --upload-file ./ob8.z01 https://transfer.sh/ob8.z01
+      - transfer ./ob8.zip 
+      - transfer ./ob8.z01 
       - echo done
     - stage: ob9
       script: 
@@ -191,8 +191,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob9.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob9.zip https://transfer.sh/ob9.zip
-      - travis_wait curl --upload-file ./ob9.z01 https://transfer.sh/ob9.z01
+      - transfer ./ob9.zip 
+      - transfer ./ob9.z01 
       - echo done
     - stage: ob10
       script: 
@@ -212,8 +212,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob10.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob10.zip https://transfer.sh/ob10.zip
-      - travis_wait curl --upload-file ./ob10.z01 https://transfer.sh/ob10.z01
+      - transfer ./ob10.zip 
+      - transfer ./ob10.z01 
       - echo done
     - stage: ob11
       script: 
@@ -233,8 +233,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob11.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob11.zip https://transfer.sh/ob11.zip
-      - travis_wait curl --upload-file ./ob11.z01 https://transfer.sh/ob11.z01
+      - transfer ./ob11.zip
+      - transfer ./ob11.z01
       - echo done
     - stage: ob12
       script: 
@@ -254,8 +254,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob12.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob12.zip https://transfer.sh/ob12.zip
-      - travis_wait curl --upload-file ./ob12.z01 https://transfer.sh/ob12.z01
+      - transfer ./ob12.zip 
+      - transfer ./ob12.z01 
       - echo done
     - stage: ob13
       script: 
@@ -275,8 +275,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob13.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob13.zip https://transfer.sh/ob13.zip
-      - travis_wait curl --upload-file ./ob13.z01 https://transfer.sh/ob13.z01
+      - transfer ./ob13.zip 
+      - transfer ./ob13.z01 
       - echo done 
     - stage: ob14
       script: 
@@ -296,8 +296,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob14.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob14.zip https://transfer.sh/ob14.zip
-      - travis_wait curl --upload-file ./ob14.z01 https://transfer.sh/ob14.z01
+      - transfer ./ob14.zip
+      - transfer ./ob14.z01
       - echo done
     - stage: ob15
       script: 
@@ -317,8 +317,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob15.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob15.zip https://transfer.sh/ob15.zip
-      - travis_wait curl --upload-file ./ob15.z01 https://transfer.sh/ob15.z01
+      - transfer ./ob15.zip
+      - transfer ./ob15.z01
       - echo done
     - stage: ob16
       script: 
@@ -338,8 +338,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob16.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob16.zip https://transfer.sh/ob16.zip
-      - travis_wait curl --upload-file ./ob16.z01 https://transfer.sh/ob16.z01
+      - transfer ./ob16.zip
+      - transfer ./ob16.z01
       - echo done
     - stage: ob17
       script: 
@@ -359,8 +359,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob17.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob17.zip https://transfer.sh/ob17.zip
-      - travis_wait curl --upload-file ./ob17.z01 https://transfer.sh/ob17.z01
+      - transfer ./ob17.zip
+      - transfer ./ob17.z01
       - echo done
     - stage: ob18
       script: 
@@ -380,8 +380,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob18.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob18.zip https://transfer.sh/ob18.zip
-      - travis_wait curl --upload-file ./ob18.z01 https://transfer.sh/ob18.z01
+      - transfer ./ob18.zip 
+      - transfer ./ob18.z01 
       - echo done
     - stage: ob19
       script: 
@@ -401,8 +401,8 @@ jobs:
       - cd zip 
       - cd ../..
       - sudo zip -r ob19.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob19.zip https://transfer.sh/ob19.zip
-      - travis_wait curl --upload-file ./ob19.z01 https://transfer.sh/ob19.z01
+      - transfer ./ob19.zip 
+      - transfer ./ob19.z01 
       - echo done
     - stage: ob20
       script: 
@@ -422,8 +422,8 @@ jobs:
       - cd zip  
       - cd ../..
       - sudo zip -r ob20.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob20.zip https://transfer.sh/ob20.zip
-      - travis_wait curl --upload-file ./ob20.z01 https://transfer.sh/ob20.z01
+      - transfer ./ob20.zip
+      - transfer ./ob20.z01
       - echo done
     - stage: ob21
       script: 
@@ -443,8 +443,8 @@ jobs:
       - cd zip    
       - cd ../..
       - sudo zip -r ob21.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob21.zip https://transfer.sh/ob21.zip
-      - travis_wait curl --upload-file ./ob21.z01 https://transfer.sh/ob21.z01
+      - transfer ./ob21.zip
+      - transfer ./ob21.z01
       - echo done
     - stage: ob22
       script: 
@@ -464,8 +464,8 @@ jobs:
       - cd zip 
       - cd ../..
       - sudo zip -r ob22.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob22.zip https://transfer.sh/ob22.zip
-      - travis_wait curl --upload-file ./ob22.z01 https://transfer.sh/ob22.z01
+      - transfer ./ob22.zip
+      - transfer ./ob22.z01
       - echo done
     - stage: ob23
       script: 
@@ -485,8 +485,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob23.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob23.zip https://transfer.sh/ob23.zip
-      - travis_wait curl --upload-file ./ob23.z01 https://transfer.sh/ob23.z01
+      - transfer ./ob23.zip
+      - transfer ./ob23.z01
       - echo done
     - stage: ob24
       script: 
@@ -506,8 +506,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob24.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob24.zip https://transfer.sh/ob24.zip
-      - travis_wait curl --upload-file ./ob24.z01 https://transfer.sh/ob24.z01
+      - transfer ./ob24.zip
+      - transfer ./ob24.z01
       - echo done
     - stage: ob25
       script: 
@@ -527,8 +527,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob25.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob25.zip https://transfer.sh/ob25.zip
-      - travis_wait curl --upload-file ./ob25.z01 https://transfer.sh/ob25.z01
+      - transfer ./ob25.zip
+      - transfer ./ob25.z01
       - echo done
     - stage: ob26
       script: 
@@ -548,8 +548,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob26.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob25.zip https://transfer.sh/ob26.zip
-      - travis_wait curl --upload-file ./ob25.z01 https://transfer.sh/ob26.z01
+      - transfer ./ob25.zip
+      - transfer ./ob25.z01
       - echo done
     - stage: ob27
       script: 
@@ -569,8 +569,8 @@ jobs:
       - cd zip
       - cd ../..
       - sudo zip -r ob27.zip -s 1000m *
-      - travis_wait curl --upload-file ./ob25.zip https://transfer.sh/ob27.zip
-      - travis_wait curl --upload-file ./ob25.z01 https://transfer.sh/ob27.z01
+      - transfer ./ob25.zip
+      - transfer ./ob25.z01
       - echo done
    
     

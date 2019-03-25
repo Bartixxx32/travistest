@@ -20,7 +20,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob1.zip -s 1000m *
       - transfer ./ob1.zip
       - transfer ./ob1.z01
@@ -41,7 +41,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob2.zip -s 1000m *
       - transfer ./ob2.zip 
       - transfer ./ob2.z01 
@@ -62,7 +62,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob3.zip -s 1000m *
       - transfer ./ob3.zip
       - transfer ./ob3.z01
@@ -83,7 +83,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip 
-      - cd ../..
+      
       - sudo zip -r ob4.zip -s 1000m *
       - transfer ./ob4.zip
       - transfer ./ob4.z01
@@ -104,7 +104,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip 
-      - cd ../..
+      
       - sudo zip -r ob5.zip -s 1000m *
       - transfer ./ob5.zip
       - transfer ./ob5.z01
@@ -125,7 +125,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip  
-      - cd ../..
+      
       - sudo zip -r ob6.zip -s 1000m *
       - ls
       - transfer ./ob6.zip
@@ -147,7 +147,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip  
-      - cd ../..
+      
       - sudo zip -r ob7.zip -s 1000m *
       - transfer ./ob7.zip 
       - transfer ./ob7.z01 
@@ -168,7 +168,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip  
-      - cd ../..
+      
       - sudo zip -r ob8.zip -s 1000m *
       - transfer ./ob8.zip 
       - transfer ./ob8.z01 
@@ -189,7 +189,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob9.zip -s 1000m *
       - transfer ./ob9.zip 
       - transfer ./ob9.z01 
@@ -210,7 +210,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob10.zip -s 1000m *
       - transfer ./ob10.zip 
       - transfer ./ob10.z01 
@@ -231,7 +231,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob11.zip -s 1000m *
       - transfer ./ob11.zip
       - transfer ./ob11.z01
@@ -252,7 +252,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob12.zip -s 1000m *
       - transfer ./ob12.zip 
       - transfer ./ob12.z01 
@@ -273,7 +273,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob13.zip -s 1000m *
       - transfer ./ob13.zip 
       - transfer ./ob13.z01 
@@ -294,7 +294,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob14.zip -s 1000m *
       - transfer ./ob14.zip
       - transfer ./ob14.z01
@@ -315,7 +315,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob15.zip -s 1000m *
       - transfer ./ob15.zip
       - transfer ./ob15.z01
@@ -336,7 +336,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob16.zip -s 1000m *
       - transfer ./ob16.zip
       - transfer ./ob16.z01
@@ -357,7 +357,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob17.zip -s 1000m *
       - transfer ./ob17.zip
       - transfer ./ob17.z01
@@ -378,7 +378,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob18.zip -s 1000m *
       - transfer ./ob18.zip 
       - transfer ./ob18.z01 
@@ -399,7 +399,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip 
-      - cd ../..
+      
       - sudo zip -r ob19.zip -s 1000m *
       - transfer ./ob19.zip 
       - transfer ./ob19.z01 
@@ -420,7 +420,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip  
-      - cd ../..
+      
       - sudo zip -r ob20.zip -s 1000m *
       - transfer ./ob20.zip
       - transfer ./ob20.z01
@@ -441,7 +441,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip    
-      - cd ../..
+      
       - sudo zip -r ob21.zip -s 1000m *
       - transfer ./ob21.zip
       - transfer ./ob21.z01
@@ -462,7 +462,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip 
-      - cd ../..
+      
       - sudo zip -r ob22.zip -s 1000m *
       - transfer ./ob22.zip
       - transfer ./ob22.z01
@@ -483,7 +483,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob23.zip -s 1000m *
       - transfer ./ob23.zip
       - transfer ./ob23.z01
@@ -504,7 +504,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob24.zip -s 1000m *
       - transfer ./ob24.zip
       - transfer ./ob24.z01
@@ -525,7 +525,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob25.zip -s 1000m *
       - transfer ./ob25.zip
       - transfer ./ob25.z01
@@ -546,7 +546,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob26.zip -s 1000m *
       - transfer ./ob25.zip
       - transfer ./ob25.z01
@@ -567,7 +567,7 @@ jobs:
       - sudo mv * ../zip
       - cd ..
       - cd zip
-      - cd ../..
+      
       - sudo zip -r ob27.zip -s 1000m *
       - transfer ./ob25.zip
       - transfer ./ob25.z01

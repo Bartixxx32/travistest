@@ -529,6 +529,48 @@ jobs:
       - curl --upload-file ./ob25.zip https://transfer.sh/ob25.zip
       - curl --upload-file ./ob25.z01 https://transfer.sh/ob25.z01
       - echo done
+    - stage: ob26
+      script: 
+      - wget https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.40_GLO_040_1903110005/OnePlus5TOxygen_43_OTA_040_all_1903110005_51ca04eb43ab.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - cd ../..
+      - sudo zip -r ob26.zip -s 1000m *
+      - curl --upload-file ./ob25.zip https://transfer.sh/ob26.zip
+      - curl --upload-file ./ob25.z01 https://transfer.sh/ob26.z01
+      - echo done
+    - stage: ob27
+      script: 
+      - wget https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.42_GLO_042_1903242148/OnePlus5TOxygen_43_OTA_042_all_1903242148_2067fb1.zip -O one.zip
+      - unzip one.zip
+      - sudo rm -r one.zip
+      - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
+      - chmod +x *
+      - ./sdat2img.py system.transfer.list  system.new.dat
+      - mkdir output
+      - sudo mount -t ext4 -o loop system.img output/
+      - sudo rm -r system.new.dat
+      - mkdir zip
+      - cd output
+      - sudo mv * ../zip
+      - cd ..
+      - cd zip
+      - cd ../..
+      - sudo zip -r ob27.zip -s 1000m *
+      - curl --upload-file ./ob25.zip https://transfer.sh/ob27.zip
+      - curl --upload-file ./ob25.z01 https://transfer.sh/ob27.z01
+      - echo done
    
     
  
@@ -538,7 +580,6 @@ addons:
     packages:
     - zip
     - unzip
-    - ncftp
     - p7zip-full
     
   addons:

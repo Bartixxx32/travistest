@@ -548,8 +548,8 @@ jobs:
       - cd zip
       
       - sudo zip -r ob26.zip -s 1000m *
-      - transfer ./ob25.zip
-      - transfer ./ob25.z01
+      - transfer ./ob26.zip
+      - transfer ./ob26.z01
       - echo done
     - stage: ob27
       script: 
@@ -569,8 +569,8 @@ jobs:
       - cd zip
       
       - sudo zip -r ob27.zip -s 1000m *
-      - transfer ./ob25.zip
-      - transfer ./ob25.z01
+      - transfer ./ob27.zip
+      - transfer ./ob27.z01
       - echo done
    
     

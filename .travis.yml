@@ -592,7 +592,6 @@ jobs:
       - transfer ./ob31.zip
       - transfer ./ob31.z01
       - echo done
-    - stage: ob32
       script: 
       - wget https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.52_GLO_052_1906102156/OnePlus5TOxygen_43_OTA_052_all_1906102156_d590aa6ab23fe.zip -O one.zip
       - unzip one.zip
@@ -611,7 +610,6 @@ jobs:
       - transfer ./ob32.zip
       - transfer ./ob32.z01
       - echo done   
-    - stage: ob33
       script: 
       - wget https://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.54_GLO_054_1906241434/OnePlus5TOxygen_43_OTA_054_all_1906241434_15cbb014579a206.zip -O one.zip
       - unzip one.zip
@@ -631,6 +629,14 @@ jobs:
       - transfer ./ob33.z01
       - echo done 
 
+
+env:
+  global:
+    - CI_NODE_TOTAL=2
+  matrix:
+    - CI_NODE_INDEX=0
+    - CI_NODE_INDEX=1
+    
 addons:
   apt:
     packages:

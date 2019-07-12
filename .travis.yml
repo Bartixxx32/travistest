@@ -4,7 +4,7 @@ dist: xenial
 language: bash
 jobs:
   include:
-    - stage: ob1
+    - stage: unpack
       script: 
       - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_004_all_1801031407_e2352bc7493e4d48.zip -O one.zip
       - unzip one.zip
@@ -185,7 +185,7 @@ jobs:
       - transfer ./ob9.zip 
       - transfer ./ob9.z01 
       - echo done
-    - stage: ob10
+    - stage: unpack0
       script: 
       - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.X.14_GLO_014_1806141245/OnePlus5TOxygen_43_OTA_014_all_1806141245_692dcbc329.zip -O one.zip
       - unzip one.zip
@@ -205,7 +205,7 @@ jobs:
       - transfer ./ob10.zip 
       - transfer ./ob10.z01 
       - echo done
-    - stage: ob11
+    - stage: unpack1
       script: 
       - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.15_GLO_015_1807031556/OnePlus5TOxygen_43_OTA_015_all_1807031556_1637f29ff.zip -O one.zip
       - unzip one.zip
@@ -225,7 +225,7 @@ jobs:
       - transfer ./ob11.zip
       - transfer ./ob11.z01
       - echo done
-    - stage: ob12
+    - stage: unpack2
       script: 
       - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.16_GLO_016_1807160203/OnePlus5TOxygen_43_OTA_016_all_1807160203_4597427b.zip -O one.zip
       - unzip one.zip
@@ -245,7 +245,7 @@ jobs:
       - transfer ./ob12.zip 
       - transfer ./ob12.z01 
       - echo done
-    - stage: ob13
+    - stage: unpack3
       script: 
       - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_017_all_1808011631_e26732cc6b274db6.zip -O one.zip
       - unzip one.zip
@@ -265,7 +265,7 @@ jobs:
       - transfer ./ob13.zip 
       - transfer ./ob13.z01 
       - echo done 
-    - stage: ob14
+    - stage: unpack4
       script: 
       - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_018_all_1808100217_94eadcd0caca45df.zip -O one.zip
       - unzip one.zip
@@ -285,7 +285,7 @@ jobs:
       - transfer ./ob14.zip
       - transfer ./ob14.z01
       - echo done
-    - stage: ob15
+    - stage: unpack5
       script: 
       - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.19_GLO_019_1808290116/OnePlus5TOxygen_43_OTA_019_all_1808290116_4ce953e3e8518c.zip -O one.zip
       - unzip one.zip
@@ -305,7 +305,7 @@ jobs:
       - transfer ./ob15.zip
       - transfer ./ob15.z01
       - echo done
-    - stage: ob16
+    - stage: unpack6
       script: 
       - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_020_all_1809110002_19ae59df7e354a31.zip -O one.zip
       - unzip one.zip
@@ -325,7 +325,7 @@ jobs:
       - transfer ./ob16.zip
       - transfer ./ob16.z01
       - echo done
-    - stage: ob17
+    - stage: unpack7
       script: 
       - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_021_all_1809201145_575e905dfd204bcc.zip -O one.zip
       - unzip one.zip
@@ -345,7 +345,7 @@ jobs:
       - transfer ./ob17.zip
       - transfer ./ob17.z01
       - echo done
-    - stage: ob18
+    - stage: unpack8
       script: 
       - wget http://otafsg1.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.22_GLO_022_1810102008/OnePlus5TOxygen_43_OTA_022_all_1810102008_742072e536a2d5c.zip -O one.zip
       - unzip one.zip
@@ -365,7 +365,7 @@ jobs:
       - transfer ./ob18.zip 
       - transfer ./ob18.z01 
       - echo done
-    - stage: ob19
+    - stage: unpack9
       script: 
       - wget https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.23_GLO_023_1810250103/OnePlus5TOxygen_43_OTA_023_all_1810250103_7c2c2665682a.zip -O one.zip
       - unzip one.zip

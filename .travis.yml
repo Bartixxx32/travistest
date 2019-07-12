@@ -4,6 +4,7 @@ dist: xenial
 language: bash
 jobs:
   include:
+
     - stage: ob1
       script: 
       - wget http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_004_all_1801031407_e2352bc7493e4d48.zip -O one.zip
@@ -661,24 +662,10 @@ jobs:
       - transfer ./ob33.z01
       - echo done 
 
-env:
-  global:
-    - CI_NODE_TOTAL=2
-  matrix:
-    - CI_NODE_INDEX=0
-    - CI_NODE_INDEX=1
+before_install:
+  - sudo apt-get install -y zip unzip p7zip-full
 
-addons:
-  apt:
-    packages:
-    - zip
-    - unzip
-    - p7zip-full
-    
-  addons:
-    apt:
-      update: true 
-  
+
 addons:
   snaps:
     - transfer
